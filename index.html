@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('background.png');
+            background-image: url('background.png'); /* 背景画像をbackground.pngに変更 */
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -16,23 +16,24 @@
             padding: 0;
         }
         header {
-            background-color: rgba(0, 123, 255, 0.8); /* 半透明な青色の背景 */
+            background-color: rgba(0, 123, 255, 0.8);
             color: #fff;
             text-align: center;
             padding: 20px;
         }
         h1 {
             margin: 0;
-            font-size: 36px;
-            background-color: #333; /* タイトルの背景色を変更 */
-            color: #fff; /* タイトルテキストの色を変更 */
-            padding: 10px;
+            font-size: 48px; /* より大きなフォントサイズを設定 */
+            background-color: #007BFF; /* タイトルの背景色を青に設定 */
+            color: #fff;
+            padding: 20px; /* より大きな内側の余白を設定 */
+            border-radius: 10px; /* 角丸を追加 */
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px; /* コンテナの幅を制限 */
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8); /* 半透明な白背景 */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
         }
@@ -45,12 +46,19 @@
         .workshop-schedule {
             margin-top: 20px;
         }
+        /* Google Spreadsheetのスタイル */
+        .spreadsheet-container {
+            overflow-x: auto; /* スプレッドシートが幅を超えた場合にスクロールバーを表示 */
+        }
+        iframe {
+            width: 100%; /* スプレッドシートをコンテナに合わせてスケーリング */
+            height: 400px; /* 適切な高さを設定 */
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Winter Workshop</h1>
-        <p>Learn, Create, and Have Fun This Winter!</p>
     </header>
     <div class="container">
         <div class="workshop-info">
@@ -72,6 +80,11 @@
                     <li>Skiing and Snowboarding</li>
                 </ul>
             </ul>
+        </div>
+
+        <!-- Google Spreadsheetを埋め込む -->
+        <div class="spreadsheet-container">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/Your_Spreadsheet_ID/pubhtml?widget=true&amp;headers=false"></iframe>
         </div>
     </div>
 </body>
