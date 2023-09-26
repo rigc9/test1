@@ -7,86 +7,94 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('background.png'); /* 背景画像をbackground.pngに変更 */
+            background-image: url('background.png');
             background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center center;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: rgba(0, 123, 255, 0.8);
+            background-color: rgba(0, 0, 255, 0.7);
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 1em 0;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
         }
         h1 {
             margin: 0;
-            font-size: 48px;
-            background-color: #007BFF;
-            color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
         }
-        .container {
-            max-width: 1000px; /* コンテナの幅を制限 */
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* 半透明な白背景 */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+        .menu {
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
         }
-        .workshop-info {
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
             text-align: center;
         }
-        .workshop-description {
-            margin: 20px 0;
+        .menu ul li {
+            display: inline;
+            margin-right: 20px;
         }
-        .workshop-schedule {
-            margin-top: 20px;
+        .menu ul li:last-child {
+            margin-right: 0;
         }
-        /* Google Spreadsheetのスタイル */
-        .spreadsheet-container {
-            overflow-x: auto; /* スプレッドシートが幅を超えた場合にスクロールバーを表示 */
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            line-height: 1.6;
         }
         iframe {
-            width: 100%; /* スプレッドシートをコンテナに合わせてスケーリング */
-            height: 400px; /* 適切な高さを設定 */
+            width: 100%;
+            height: 400px;
+            border: none;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Winter Workshop</h1>
+        <h1>Welcome to Winter Workshop</h1>
     </header>
+    <div class="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="information.html">Information for Participants</a></li>
+        </ul>
+    </div>
     <div class="container">
-        <div class="workshop-info">
-            <h2>About the Workshop</h2>
-            <p class="workshop-description">
-                Join us for an exciting winter workshop filled with fun activities, learning, and creativity. Our workshop is designed to make your winter memorable and productive.
-            </p>
-        </div>
-        <div class="workshop-schedule">
-            <h2>Workshop Schedule</h2>
-            <ul>
-                <li><strong>Date:</strong> January 15-17, 2024</li>
-                <li><strong>Location:</strong> Snowy Hills Community Center</li>
-                <li><strong>Workshop Topics:</strong></li>
-                <ul>
-                    <li>Ice Sculpture Art</li>
-                    <li>Snowflake Photography</li>
-                    <li>Winter Cooking</li>
-                    <li>Skiing and Snowboarding</li>
-                </ul>
-            </ul>
-        </div>
+        <h2>About Winter Workshop</h2>
+        <p>Winter Workshop is a yearly event that brings together enthusiasts of winter sports and activities. Whether you love skiing, snowboarding, or simply enjoying the beauty of winter landscapes, this workshop is the perfect opportunity to connect with like-minded individuals.</p>
 
-        <!-- Google Spreadsheetを埋め込む -->
-        <div class="spreadsheet-container">
-            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmzzWvGl0qCnGLyOxXCzBWJCYazEh2fYknOTXsWrf_eEbmvqLZtXukHQPuxCeIzw_H1TO0IsVLmSkF/pubhtml?gid=0&single=true"></iframe>
-        </div>
+        <h2>Event Details</h2>
+        <p>Date: January 15th - 20th, 20XX</p>
+        <p>Location: Snowy Peaks Resort, Winter Wonderland</p>
+
+        <h2>Activities</h2>
+        <ul>
+            <li>Skiing and Snowboarding lessons</li>
+            <li>Snowshoeing adventures</li>
+            <li>Ice skating on the frozen lake</li>
+            <li>Winter photography workshops</li>
+        </ul>
+
+        <h2>Registration</h2>
+        <p>Registration for Winter Workshop is now open. Don't miss this chance to embrace the winter season with us. Reserve your spot today!</p>
+
+        <h2>Program</h2>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmzzWvGl0qCnGLyOxXCzBWJCYazEh2fYknOTXsWrf_eEbmvqLZtXukHQPuxCeIzw_H1TO0IsVLmSkF/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" title="Program"></iframe>
     </div>
 </body>
 </html>
