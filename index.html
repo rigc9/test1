@@ -13,46 +13,39 @@
             padding: 0;
         }
         header {
-            background-color: rgba(0, 0, 255, 0.7);
+            background-color: rgba(0, 0, 255, 0.8);
             color: #fff;
             text-align: center;
             padding: 1em 0;
-            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         h1 {
             margin: 0;
         }
-        .menu {
+        .navbar {
             background-color: rgba(0, 0, 0, 0.8);
-            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .menu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
-        .menu ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        .menu ul li:last-child {
-            margin-right: 0;
-        }
-        .menu a {
-            text-decoration: none;
+        .navbar a {
+            float: left;
+            display: block;
             color: #fff;
-            font-weight: bold;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: rgba(0, 0, 0, 0.6);
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px); /* すりガラス効果 */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         p {
             line-height: 1.6;
@@ -68,11 +61,9 @@
     <header>
         <h1>Welcome to Winter Workshop</h1>
     </header>
-    <div class="menu">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="information.html">Information for Participants</a></li>
-        </ul>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="information.html">Information for Participants</a>
     </div>
     <div class="container">
         <h2>About Winter Workshop</h2>
@@ -94,7 +85,9 @@
         <p>Registration for Winter Workshop is now open. Don't miss this chance to embrace the winter season with us. Reserve your spot today!</p>
 
         <h2>Program</h2>
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmzzWvGl0qCnGLyOxXCzBWJCYazEh2fYknOTXsWrf_eEbmvqLZtXukHQPuxCeIzw_H1TO0IsVLmSkF/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" title="Program"></iframe>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmzzWvGl0qCnGLyOxXCzBWJCYazEh2fYknOTXsWrf_eEbmvqLZtXukHQPuxCeIzw_H1TO0IsVLmSkF/pubhtml?widget=true&amp;headers=false"></iframe>
+
+        <p>For more information, please contact us at <a href="mailto:info@winterworkshop.com">info@winterworkshop.com</a>.</p>
     </div>
 </body>
 </html>
