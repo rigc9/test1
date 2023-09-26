@@ -3,91 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winter Workshop</title>
+    <title>Tohoku Winter Spintronics School</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('background.png');
-            background-size: cover;
             margin: 0;
             padding: 0;
+            background-image: url('background.png');
+            background-size: cover;
         }
         header {
             background-color: rgba(0, 0, 255, 0.8);
             color: #fff;
             text-align: center;
             padding: 1em 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
         }
         h1 {
             margin: 0;
         }
-        .navbar {
-            background-color: rgba(0, 0, 0, 0.8);
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: #fff;
+        .menu-bar {
             text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
         }
-        .navbar a:hover {
-            background-color: rgba(0, 0, 0, 0.6);
+        .menu-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
-            backdrop-filter: blur(5px); /* すりガラス効果 */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
         p {
             line-height: 1.6;
         }
-        iframe {
+        .program-iframe {
             width: 100%;
-            height: 400px;
+            height: 600px;
             border: none;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Winter Workshop</h1>
+        <h1>Tohoku Winter Spintronics School</h1>
     </header>
-    <div class="navbar">
+    <div class="menu-bar">
         <a href="#">Home</a>
         <a href="information.html">Information for Participants</a>
     </div>
     <div class="container">
-        <h2>About Winter Workshop</h2>
-        <p>Winter Workshop is a yearly event that brings together enthusiasts of winter sports and activities. Whether you love skiing, snowboarding, or simply enjoying the beauty of winter landscapes, this workshop is the perfect opportunity to connect with like-minded individuals.</p>
+        <h2>About this school</h2>
+        <p>Tohoku Winter Spintronics School is a workshop for gathering people, communicating with each other, and enjoying scientific discussions for the development of spintronics.</p>
 
         <h2>Event Details</h2>
-        <p>Date: January 15th - 20th, 20XX</p>
-        <p>Location: Snowy Peaks Resort, Winter Wonderland</p>
-
-        <h2>Activities</h2>
-        <ul>
-            <li>Skiing and Snowboarding lessons</li>
-            <li>Snowshoeing adventures</li>
-            <li>Ice skating on the frozen lake</li>
-            <li>Winter photography workshops</li>
-        </ul>
+        <p>Date: February 20th-22nd (welcome reception on 19th)</p>
+        <p>Location: Iwate University and Amihari-onsen Kyukamura</p>
 
         <h2>Registration</h2>
-        <p>Registration for Winter Workshop is now open. Don't miss this chance to embrace the winter season with us. Reserve your spot today!</p>
+        <p>Please fill out the registration form <a href="https://.....">here</a>.</p>
 
         <h2>Program</h2>
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmzzWvGl0qCnGLyOxXCzBWJCYazEh2fYknOTXsWrf_eEbmvqLZtXukHQPuxCeIzw_H1TO0IsVLmSkF/pubhtml?widget=true&amp;headers=false"></iframe>
-
-        <p>For more information, please contact us at <a href="mailto:info@winterworkshop.com">info@winterworkshop.com</a>.</p>
+        <iframe class="program-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmzzWvGl0qCnGLyOxXCzBWJCYazEh2fYknOTXsWrf_eEbmvqLZtXukHQPuxCeIzw_H1TO0IsVLmSkF/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" title="Program"></iframe>
     </div>
 </body>
 </html>
