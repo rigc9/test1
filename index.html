@@ -3,78 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tohoku Winter Spintronics School</title>
+    <title>Iwate Spintronics School, 2024 Winter</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-image: url('background.jpg');
             background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
         }
         header {
-            background-color: rgba(0, 0, 255, 0.8);
+            background-color: rgba(51, 51, 51, 0.7);
             color: #fff;
             text-align: center;
-            padding: 1em 0;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-        }
-        h1 {
-            margin: 0;
-        }
-        .menu-bar {
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px 0;
-            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
-        }
-        .menu-bar a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 18px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.7);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
+            padding: 20px 0;
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
         }
-        p {
-            line-height: 1.6;
+        h1 {
+            font-size: 36px;
         }
-        .program-iframe {
+        .container {
+            max-width: 800px;
+            margin: 10px auto 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+        }
+        .menu {
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.7);
+            padding: 10px 0;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .menu a {
+            color: rgb(177, 255, 251); /* 通常の文字色を黄色に設定 */
+            text-decoration: none;
+            margin: 0 20px;
+            transition: color 0.3s; /* ホバーエフェクトのトランジションを設定 */
+        }
+        .menu a:hover {
+            color: #fdfac7; /* ホバーエフェクトで文字色を白に変更 */
+        }
+        .icon {
+            float: right; /* 右上にアイコンを配置 */
+            margin:  0 px  0 px 0 0; /* アイコンの位置調整 */
+        }
+        .program {
+            margin-top: 20px; /* タイトルの上に余白を追加 */
+        }
+        iframe {
             width: 100%;
-            height: 600px;
+            height: 300px;
             border: none;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Tohoku Winter Spintronics School</h1>
+        <h1>Iwate Spintronics School, 2024 Winter</h1>
+        <p>Learn, Share, and Explore the World of Spintronics</p>
     </header>
-    <div class="menu-bar">
+    <div class="menu">
         <a href="#">Home</a>
         <a href="information.html">Information for Participants</a>
     </div>
     <div class="container">
+        <img src="icon.png" alt="Icon" class="icon">
+
         <h2>About this school</h2>
-        <p>Tohoku Winter Spintronics School is a workshop for gathering people, communicating with each other, and enjoying scientific discussions for the development of spintronics.</p>
+        <p>Iwate Spintronics School is a workshop that brings together people from diverse backgrounds to foster communication and engage in scientific discussions for the advancement of spintronics.</p>
 
         <h2>Event Details</h2>
-        <p>Date: February 20th-22nd (welcome reception on 19th)</p>
+        <p>Date: (Welcome reception) February 19th + (School) February 20th-22nd</p>
         <p>Location: Iwate University and Amihari-onsen Kyukamura</p>
 
         <h2>Registration</h2>
-        <p>Please fill out the registration form <a href="https://.....">here</a>.</p>
+        <p>Please fill out the registration form below:</p>
+        <p><a href="https://example.com/registration">Registration Form</a></p>
 
-        <h2>Program</h2>
-        <iframe class="program-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmzzWvGl0qCnGLyOxXCzBWJCYazEh2fYknOTXsWrf_eEbmvqLZtXukHQPuxCeIzw_H1TO0IsVLmSkF/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" title="Program"></iframe>
+        <h2 class="program">Program</h2>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmzzWvGl0qCnGLyOxXCzBWJCYazEh2fYknOTXsWrf_eEbmvqLZtXukHQPuxCeIzw_H1TO0IsVLmSkF/pubhtml?widget=true&amp;chrome=false" frameborder="0" allowfullscreen="false"></iframe>
     </div>
 </body>
 </html>
