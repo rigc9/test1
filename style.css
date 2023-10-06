@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-    margin: 25px 0 5px;
+    margin: 25px 0 10px;
 }
 
 h3 {
@@ -53,13 +53,13 @@ p {
     font-size: 13pt;
     font-weight: normal;
     line-height: 1.15;
-    margin: 0px 0px 7px 5px;
+    margin: -5px 0px 7px 5px;
     text-align: justify;
     text-indent: 0.25em;
 }
 
 .contact {
-    margin-top: -10px;
+    margin-top: -5px;
     font-weight: normal;
 }
 
@@ -182,7 +182,7 @@ iframe {
 
 /* リストのスタイル */
 ul {
-    margin: 0px 0px 15px;
+    margin: 0px 0px 10px;
     list-style: none;
     padding: 0;;
 }
@@ -237,6 +237,7 @@ th {
     }
 
     .invited-list {
+        margin-top: -10px;
         column-count: 1;
     }
 
@@ -265,6 +266,7 @@ th {
     }
 
     .invited-list {
+        margin-top: -10px;
         column-count: 2;
     }
 
