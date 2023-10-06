@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     background-image: url('background.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -20,44 +20,44 @@ header {
 h1 {
     font-size: 36px;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 10px rgb(168, 168, 168);
 }
 
 h2 {
-    margin-top: 20px;
-    padding-top: 0px;
-    margin-bottom: 5px;
-    padding-bottom: 0px;
+    margin: 25px 0 5px;
 }
 
-h3,h4,h5 {
-    margin: 5px 0px 3px 0px;
-    padding: 0px;
+h3 {
+    margin: 5px 0px 3px 5px;
 }
 
-h3{
-    padding-left: 5pt;
-}
-
-h4{
-    padding-left: 10pt;
+h4 {
+    margin: 5px 0px 1px 10px;
 }
 
 p {
-    margin: 0;
-    padding: 0 0 5pt 15pt;
+    margin: 0 0 15px 15px;
+    font-weight: lighter;
 }
 
 .top {
     margin-top: -5px;
-    padding-top: 0px;
 }
 
 .about {
     font-size: 13pt;
+    font-weight: normal;
     letter-spacing: .005em;
     line-height: 1.15;
     margin-top: 0px;
-    padding-top: 0px;
+}
+
+.contact {
+    margin-top: -10px;
+}
+
+span {
+    display: inline-block;
 }
 
 /* メインのスタイル */
@@ -73,9 +73,10 @@ p {
     color: rgb(212, 255, 253);
     /* 通常の文字色を黄色に設定 */
     text-decoration: none;
-    margin: 0 20px;
     transition: color .7s;
     /* ホバーエフェクトのトランジションを設定 */
+    margin: 25px;
+    line-height: 1.4;
 }
 
 .menu a[href="#"] {
@@ -98,9 +99,10 @@ p {
     -webkit-backdrop-filter: blur(3px);
 }
 
-.right {
+.right-container {
+    float: right;
     width: 200px;
-    margin-left: 20px;
+    margin: auto 0 0 20px;
 }
 
 .icon {
@@ -138,6 +140,7 @@ iframe {
     content: '';
     display: block;
     clear: both;
+    margin: -15pt;
 }
 
 .map {
@@ -155,24 +158,30 @@ iframe {
 
 /* リストのスタイル */
 ul {
-    margin-top: 0px;
+    margin: 0px 0px 15px;
     list-style: none;
     padding: 0;
 }
 
 li {
-    margin-bottom: -5px;
-    padding: 5px 15px;
+    margin-bottom: 0px;
+    padding: 5px 15px 0px;
 }
 
 pre {
     font-size: 12pt;
     font-family: 'Gill Sans';
-    padding-left: 10pt;
-    margin: 2pt;
+    margin: 2pt 2pt 2pt 10pt;
+}
+
+.aff {
+    font-size: 12pt;
+    font-family: 'Gill Sans';
+    margin: 2pt 2pt 2pt 10pt;
 }
 
 table {
+    margin-left: 15pt;
     border: 1px solid #000;
     border-collapse: collapse;
     width: 100%;
@@ -194,7 +203,7 @@ th {
 @media screen and (max-width:640px) {
 
     /*　画面サイズが640px以下の場合ここの記述が適用される　*/
-    .right {
+    .right-container {
         float: right;
         width: 25%;
         margin-left: 20px;
@@ -203,12 +212,16 @@ th {
     .map {
         display: none;
     }
+
+    .menu a {
+        margin: 10px;
+    }
 }
 
 @media screen and (min-width:640px) {
 
     /*　画面サイズが640px以下の場合ここの記述が適用される　*/
-    .right {
+    .right-container{
         float: right;
     }
 
@@ -219,4 +232,13 @@ th {
     .access-map {
         display: none;
     }
+
+    .menu a {
+        margin: 25px;
+    }
+}
+
+
+.dom::before {
+    content: '@gmail.';
 }
