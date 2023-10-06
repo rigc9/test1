@@ -198,8 +198,11 @@ li {
     margin: 2pt 2pt 2pt 10pt;
 }
 
-table {
+.scroll-table{
+    overflow-x: auto;
     margin: -10px 5px 5px 10px;
+}
+table {
     border: 1px solid #000;
     border-collapse: collapse;
     width: 100%;
