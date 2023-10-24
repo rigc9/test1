@@ -25,7 +25,9 @@ h1 {
 
 h2 {
     margin: 25px 0 10px;
+    display: inline-block;
 }
+
 
 h3 {
     margin: 5px 0px 3px 5px;
@@ -84,6 +86,7 @@ span {
     line-height: 1.4;
 }
 
+
 .menu a[href="#"] {
     /* text-shadow:1px 1px 2px #fcf8ad,-1px 1px 2px #fcf8ad,1px -1px 2px #fcf8ad,-1px -1px 2px #fcf8ad; */
     text-shadow: 0 0 10px #fcf8ad, 0 0 10px #fcf8ad, 0 0 10px #fcf8ad;
@@ -97,7 +100,7 @@ span {
     color: rgb(212, 234, 255);
 }
 
-.menu a.m3{
+.menu a.m3 {
     color: rgb(228, 212, 255);
 }
 
@@ -183,7 +186,8 @@ iframe {
 ul {
     margin: 0px 0px 10px;
     list-style: none;
-    padding: 0;;
+    padding: 0;
+    ;
 }
 
 li {
@@ -198,10 +202,51 @@ li {
     margin: 2pt 2pt 2pt 10pt;
 }
 
-.scroll-table{
+.tut {
+    font-size: 10pt;
+    font-family: 'Gill Sans';
+    font-weight: bold;
+
+    position: relative;
+    padding: 0.15rem 0.3rem;
+    text-align: center;
+
+    margin: 0px 5px 0px -70px;
+}
+
+.tut::before,
+.tut::after {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    content: '';
+}
+
+.tut::before {
+    border-left: solid 2px;
+    border-top: solid 2px;
+    top: 0;
+    left: 0;
+}
+
+.tut::after {
+    border-right: solid 2.5px;
+    border-bottom: solid 2.5px;
+    bottom: 0;
+    right: 0;
+}
+
+.invited-list {
+    margin-top: -10px;
+    column-count: 2;
+}
+
+
+.scroll-table {
     overflow-x: auto;
     margin: -10px 5px 5px 10px;
 }
+
 table {
     border: 1px solid #000;
     border-collapse: collapse;
@@ -227,7 +272,6 @@ th {
 
     /*　画面サイズが640px以下の場合ここの記述が適用される　*/
     .right-container {
-        float: right;
         width: 25%;
         margin-left: 20px;
     }
@@ -241,22 +285,23 @@ th {
     }
 
     .invited-list {
-        margin-top: -10px;
         column-count: 1;
     }
 
     .clearfix::after {
         display: none;
     }
+
+    .tut {
+        margin-left: 0;
+    }
+
+
 }
 
 @media screen and (min-width:640px) {
 
     /*　画面サイズが640px以下の場合ここの記述が適用される　*/
-    .right-container{
-        float: right;
-    }
-
     .access {
         display: none;
     }
@@ -265,13 +310,8 @@ th {
         display: none;
     }
 
-    .menu a {
-        margin: 25px;
-    }
-
-    .invited-list {
-        margin-top: -10px;
-        column-count: 2;
+    .tut-br {
+        display: none;
     }
 
 }
