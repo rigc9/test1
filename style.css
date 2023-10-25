@@ -209,8 +209,7 @@ li {
 
     position: relative;
     padding: 0.15rem 0.3rem;
-    text-align: center;
-
+    text-align: left;
     margin: 0px 5px 0px -70px;
 }
 
@@ -236,9 +235,15 @@ li {
     right: 0;
 }
 
-.invited-list {
-    margin-top: -10px;
-    column-count: 2;
+.flex_box {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+.flex_item {
+    width: 50%;
+    min-width: 320px;
+    padding: auto;
 }
 
 
@@ -284,8 +289,12 @@ th {
         margin: 10px;
     }
 
-    .invited-list {
-        column-count: 1;
+    .flex_box {
+        flex-direction: column;
+    }
+
+    .flex_item{
+        width: 100%;
     }
 
     .clearfix::after {
